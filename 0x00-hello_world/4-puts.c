@@ -1,2 +1,2 @@
-put(#!/bin/bash
-    echo -e "Programming is like building a multilingual puzzle/n")
+#!/bin/bash
+put(echo -e "Programming is like building a multilingual puzzle/n")
