@@ -1,1 +1,77 @@
-#!/bin/bash/
+0-preprocessor ::
+
+#!/bin/bash
+gcc -E 0-preprocessor -o c $CFILE
+
+1-compiler ::
+
+#!/bin/bash
+gcc -c 1-compiler $CFILE
+
+2-assembler ::
+
+#!/bin/bash
+gcc -S $CFILE
+
+3-name ::
+#!/bin/bash
+gcc -o cisfun $CFILE
+
+
+4-puts.c
+
+#include <stdio.h>
+
+/**
+ * main - C program that prints exactly "Programming is like
+ *                building a multilingual puzzle, followed by a new line.
+ *
+ * Return: Always 0.
+ */
+
+int main(void)
+{
+
+char text[] = "\"Programming is like building a multilingual puzzle";
+
+puts(text);
+
+return (0);
+
+}
+
+
+
+5-printf.c :
+
+#include <stdio.h>
+
+/**
+ * main - C program that prints exactly with proper grammar, but the outcome
+ *                is a piece of art,, followed by a new line.
+ *
+ * Return: Always 0.
+ */
+
+int main(void)
+{
+
+char text[] = "with proper grammar, but the outcome is a piece of art,\n";
+
+printf("%s", text);
+
+return (0);
+
+}
+
+
+6-size.c:
+
+
+
+100-intel:
+#!/bin/bash
+gcc -S -masm=intel $CFILE
+
+
+101-quote.c:
