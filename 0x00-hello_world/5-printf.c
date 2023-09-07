@@ -12,7 +12,7 @@ int main(void)
 
 char text[] = "with proper grammar, but the outcome is a piece of art,";
 
- printf("%s",text);
+printf("%s", text);
 
 return (0);
 
