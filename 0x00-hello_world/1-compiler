@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -C 1-compiler -o .o $CFILE
+gcc -c 1-compiler -o 1-compiler $CFILE
