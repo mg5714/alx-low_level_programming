@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
 * main - Entry point
-* Description: 'C program that prints all possible combinations of single-digit numbers'
+* Description: 'C program that prints all possible combinations
+*                           of single-digit numbers'
 * only use the putchar
 * Return: Always 0 (Success)
 */
