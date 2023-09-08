@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-char alphabet;
+  char alphabet, q, e;
 for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
 {
 if (alphabet !=q && alphabet !=e) 
