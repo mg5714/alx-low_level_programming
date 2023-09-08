@@ -14,15 +14,15 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (ld > 5)
 {
-printf("Last digit of %d is %d",n, ld ,"and is greater than 5");
+printf("Last digit of %d is %d",n, ld);
 }
 else if (ld == 0)
 {
-printf("Last digit of %d is %d",n, ld ,"and is 0");
+printf("Last digit of %d is %d",n, ld);
 }
 else if (ld < 6)
 {
-printf("Last digit of %d is %d",n, ld ,"and is less than 6 and not 0");
+printf("Last digit of %d is %d",n, ld);
 }
 return (0);
 }
