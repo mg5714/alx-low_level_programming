@@ -11,7 +11,7 @@ int i;
 char x;
 for (i = 0; i < 10 ; i++)  
 {
-putchar(i);
+putchar('0' + i);
 }
 for (x = 'a' ; x <= 'f' ; x++)  
 {
