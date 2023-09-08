@@ -17,15 +17,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
     if (n > 0)
     {
-        printf("moj");
-    }
-    else if (n == 0)
-    {
-        printf("zero");
+        printf("%d, is positive");
     }
     else if (n < 0)
     {
-        printf("nag");
+        printf("%d, is negative");
+    }
+    else if (n == 0)
+    {
+        printf("%d, is zero");
     }
     
 	return (0);
