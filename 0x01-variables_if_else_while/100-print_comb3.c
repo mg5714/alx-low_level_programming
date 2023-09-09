@@ -6,16 +6,20 @@
 int main(void)
 {
 int i, x;
-for (i = 0; i < 10; i++)
+for (i = 48; i <= 56; i++)
 {
-for (x = 0; x < 10; x++)
+for (x = 49; x <= 57; x++)
 {
-putchar((i % 10) + '0');
-putchar((x % 10) + '0');
-if (i == 9 && x == 9)
-continue;
+if (x > i)
+{
+putchar(i);
+putchar(x);
+if (i != 56 || x != 57)
+{
 putchar(',');
 putchar(' ');
+}
+}
 }
 }
 putchar('\n');
