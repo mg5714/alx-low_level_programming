@@ -6,8 +6,8 @@
 */
 int main(void)
 {
-int i[] = "_putchar";
-putchar(i);
-putchar('\n');
+char i[] = "_putchar";
+_putchar(i);
+_putchar('\n');
 return (0);
 }
