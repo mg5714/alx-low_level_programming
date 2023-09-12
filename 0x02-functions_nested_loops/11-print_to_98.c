@@ -6,6 +6,7 @@
  */
 void print_to_98(int n)
 {
+  int i, j;
 if (n <= 98) {
 for (int i = n; i <= 98; i++) {
 _putchar(i / 10 + '0'); // print tens digit
