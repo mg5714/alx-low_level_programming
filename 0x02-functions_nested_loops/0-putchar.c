@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <main.h>
 /**
 * main - Entry point
@@ -7,7 +6,7 @@
 */
 int main(void)
 {
-int i = '_putchar';
+int i[] = "_putchar";
 putchar(i);
 putchar('\n');
 return (0);
