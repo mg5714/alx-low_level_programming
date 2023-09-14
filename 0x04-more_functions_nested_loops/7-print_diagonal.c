@@ -4,21 +4,20 @@
 *@n:parameter
 *Return:returns nothing
 */
-void print_diagonal(int n) 
-int i, j;
+void print_diagonal(int n)
 {
+int i, j;
 if (n > 0)
 {
-putchar('\n');
-return;
-}
 for (i = 0; i < n; i++)
 {
 for (j = 0; j < i; j++)
-{
-putchar(' ');
+_putchar(' ');
+_putchar('\\');
+if (i == (n - 1))
+continue;
+_putchar('\n');
 }
-putchar('\\');
-putchar('\n');
 }
+_putchar('\n');
 }
