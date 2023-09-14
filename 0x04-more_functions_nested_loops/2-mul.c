@@ -7,8 +7,5 @@
 */
 int mul(int a, int b)
 {
-int i, x, result;
-result = i * x;
-putchar(result, '0');
-return (0);
+return (a * b);
 }
