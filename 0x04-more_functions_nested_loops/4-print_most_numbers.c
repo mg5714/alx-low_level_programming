@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *print_most_numbers - prints numbers except 2 and 4.
-*Return: nothing
+*Return: always 0 (success)
 */
 void print_most_numbers(void)
 {
@@ -10,7 +10,7 @@ for (i = 0; i <= 9; i++)
 {
 if (i == 2 || i == 4)
 continue;
-_putchar(i + '0');
+_putchar(i + 48);
 }
 _putchar('\n');
 }
