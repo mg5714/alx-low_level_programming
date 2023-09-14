@@ -1,14 +1,22 @@
 #include "main.h"
 /**
-*print_line - prints a straight line
+*print_diagonal - prints a diagonal
 *@n:parameter
 *Return:returns nothing
 */
-void print_line(int n)
+void print_diagonal(int n)
 {
-for (i = 0; i < n; i++)
+if (n <= 0)
 {
-putchar('\\');
+printf("\n");
+return;
 }
-putchar('\n');
+for (int i = 0; i < n; i++)
+{
+for (int j = 0; j < i; j++)
+{
+printf(" ");
+}
+printf("\\\n");
+}
 }
