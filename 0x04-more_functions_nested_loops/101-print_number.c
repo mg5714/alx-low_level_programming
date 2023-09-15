@@ -2,22 +2,19 @@
 /**
 * print_number - Prints a number
 * @n: The number to print
+*
 */
 void print_number(int n)
 {
-unsigned int num;
+unsigned int num = n;
 if (n < 0)
 {
-num = -n;
-putchar('-');
+_putchar('-');
+num = -num;
 }
-else
-{
-num = n;
-}
-if (num / 10)
+if (num > 9)
 {
 print_number(num / 10);
 }
-putchar((num % 10) + '0');
+_putchar(num % 10 + '0');
 }
