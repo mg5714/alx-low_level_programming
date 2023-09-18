@@ -7,7 +7,6 @@
 void _puts(char *str)
 {
 int i;
-for (i = 0; *str != '\0'; str++)
-i++;
-puts(str);
+for (i = 0; *str[i] != '\0'; i++)
+puts(str[i]);
 }
