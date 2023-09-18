@@ -6,11 +6,13 @@
 */
 void rev_string(char *s)
 {
-int len = s.length();
-int n = len;
-while (n--)
+char tmp;
+int i, l;
+for (l = 0; s[l] != '\0'; l++);
+for (i = 0; i < len / 2; i++)
 {
-putchar(s[i]);
+tmp = s[i];
+s[i] = s[l - 1 - i];
+s[l - 1 - i] = tmp;
 }
-putchar('\n');
 }
