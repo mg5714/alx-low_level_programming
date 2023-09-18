@@ -10,5 +10,4 @@ int i;
 for (i = 0; *str != '\0'; str++)
 i++;
 puts(str);
-return (0);
 }
