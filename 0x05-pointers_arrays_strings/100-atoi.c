@@ -18,5 +18,5 @@ result = (result * 10) + (*s - '0');
 else if (result > 0)
 break;
 } while (*s++);
-return (result * sign);
+return (sign * result);
 }
