@@ -7,7 +7,7 @@
 void rev_string(char *s)
 {
 int i;
-int len = s.length();
+int len = *s.length();
  int n = len;
  for (i = (n - 1); i >= 0; i--)
 putchar(s[i]);
