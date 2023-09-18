@@ -13,7 +13,7 @@ int sign = 1;
 do {
 if (*s == '-')
 sign *= -1;
-else if (*s >= '0', && *s <= '9')
+else if (*s >= '0' && *s <= '9')
 result = (result * 10) + (*s - '0');
 else if (result > 0)
 break;
