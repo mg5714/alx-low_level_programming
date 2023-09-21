@@ -8,7 +8,7 @@
 char *cap_string(char *str)
 {
 char *token;
-char separators[] = " \t\n,;.!?\"(){}";
+char separators[] = " \t\n,;.!\"(){}";
 token = strtok(str, separators);
 while (token != NULL)
 {
