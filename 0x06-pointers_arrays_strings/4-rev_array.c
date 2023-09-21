@@ -14,4 +14,5 @@ temp = a[i];
 a[i] = a[n - 1 - i];
 a[n - 1 - i] = temp;
 }
+return (0);
 }
