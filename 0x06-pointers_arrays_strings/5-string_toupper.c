@@ -1,19 +1,20 @@
-#include "holberton.h"
+#include "main.h"
 /**
 * string_toupper - change lowercase letters to uppercase.
-* @s: analized string.
+* @str: analized string.
 *
-* Return: String with all letters Uppercased.
+* Return: all letters Uppercased.
 */
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-int j = 0;
-char str[];
-char ch;
-while (str[j]) {
-ch = str[j];
-putchar(toupper(ch));
-j++;
+int i = 0;
+while(str[i] != '\0')
+{
+if(str[i] >= 'a' && str[i] <= 'z')
+{
+str[i] = str[i] - ('a' - 'A');
 }
-return (0);
+i++;
+}
+return (str);
 }
