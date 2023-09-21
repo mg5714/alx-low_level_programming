@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* reverse_array - prints reverse array.
-* @a: array to be compared.
-* @n: size of array.
+* reverse_array - everses of an array.
+* @a: array to be rev.
+* @n: number of elements of the array
 * Return: reversed array.
 */
 void reverse_array(int *a, int n)
@@ -14,4 +14,5 @@ temp = a[i];
 a[i] = a[n-i-1];
 a[n-i-1] = temp;
 }
+return (temp);
 }
