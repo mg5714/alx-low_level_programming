@@ -12,7 +12,7 @@ i = 0;
 while (i <= n)
 {
 temp = a[i];
-a[i++] = a[n - i -1];
+a[i] = a[n - i -1];
 a[n - i - 1] = temp;
 }
 }
