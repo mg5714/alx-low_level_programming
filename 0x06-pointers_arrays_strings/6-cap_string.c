@@ -7,13 +7,22 @@
  */
 char *cap_string(char *str)
 {
-char *token;
-char separators[] = " \t\n,;.!\"(){}";
-token = strtok(str, separators);
-while (token != NULL)
+int i = 0;
+while(str[i] != '\0')
 {
-token[0] = toupper(token[0]);
-token = strtok(NULL, separators);
+if(i == 0 || str[i-1] == ' ' || str[i-1] == '\t' || str[i-1] == '\n' || str[i-1] == ',' || str[i-1] == ';' || str[i-1] == '.' ||
+ str[i-1] == '!' || str[i-1] == '?' || str[i-1] == '"' || str[i-1] == '(' || str[i-1] == ')' || str[i-1] == '{' || str[i-1] == '}')
+{
+if(str[i] >= 'a' && str[i] <= 'z')
+{
+str[i] = str[i] - ('a' - 'A');
+}
+else
+{
+
+}
+}
+i++;
 }
 return (str);
 }
