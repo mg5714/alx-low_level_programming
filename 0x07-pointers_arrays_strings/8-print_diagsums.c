@@ -14,7 +14,7 @@ int i;
 for (i = 0; i < size; i++)
 {
 sum1 += a[i];
-for (y = size - 1; y >= 0 ; y--)
+for (i = size - 1; i >= 0 ; i--)
 {
 sum2 += a[size - i - 1];
 }
