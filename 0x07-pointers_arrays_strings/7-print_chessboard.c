@@ -4,7 +4,7 @@
  *@a: to printed
 * Return: none
 */
-void print_chessboard(char (*a)[8]);
+void print_chessboard(char (*a)[8])
 {
 for (int i = 0; i < 8; i++)
 {
