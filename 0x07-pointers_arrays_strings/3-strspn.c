@@ -8,14 +8,14 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int count = 0;
-while (*s != '\0') {
-if (_strchr(accept, *s) == NULL)
+unsigned int i, count;
+for (count = 0; *S != '\0'; count++)
 {
+for (i = 0; *accept != *s; i++)
+{
+if (*accept == '\0')
 return (count);
 }
-count++;
-s++;
 }
 return (count);
 }
