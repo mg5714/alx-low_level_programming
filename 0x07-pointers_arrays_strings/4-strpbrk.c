@@ -3,18 +3,22 @@
 * _strpbrk - searches a string for any of a set of bytes.
 *@s: string
 *@accept: string
+*
 * Return: Returns a pointer to the byte
 */
 char *_strpbrk(char *s, char *accept)
 {
-int j;
+int i = 0;
+
 while (*s)
 {
-for (j = 0; accept[j]; j++)
-{	
-if (*s == accept[j])
+while (accept[i] != '\0')
+{
+if (*s == accept[i])
 return (s);
+i++;
 }
+i = 0;
 s++;
 }
 return ('\0');
