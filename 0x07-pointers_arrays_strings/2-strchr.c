@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _strchr - function that locates a character in a string
  *@s: specifies the pointer to be performed.
@@ -8,13 +8,17 @@
 */
 char *_strchr(char *s, char c)
 {
-int i;
-for (i = 0; s[i] >= '\0'; i++)
+while (*s >= '\0')
 {
-if (s[i] == c)
+if (*s == c)
 {
-return (s + i);
+return (s);
 }
+s++;
 }
-return ('\0');
+if (c == '\0')
+{
+return (s);
+}
+return (NULL);
 }
