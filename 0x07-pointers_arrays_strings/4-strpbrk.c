@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _strpbrk - searches a string for any of a set of bytes.
- *@s: string
+* _strpbrk - searches a string for any of a set of bytes.
+*@s: string
 *@accept: string
 *
 * Return: Returns a pointer to the byte
@@ -17,5 +17,5 @@ if (s[i] == accept[j])
 return (accept);
 }
 }
-return (NULL);
+return ('\0');
 }
