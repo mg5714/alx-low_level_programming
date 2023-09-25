@@ -14,6 +14,7 @@ for (i = 0; i < size; i++)
 {
 sum1 += (a[i]);
 sum2 += a[size-i-1];
+a += size;
 }
 printf("Sum of diagonal 1: %d\n", sum1);
 printf("Sum of diagonal 2: %d\n", sum2);
