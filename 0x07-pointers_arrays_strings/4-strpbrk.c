@@ -8,13 +8,12 @@
 */
 char *_strpbrk(char *s, char *accept)
 {
-while (*s != '\0')
+for (i = 0; s[i] != '\0'; i++)
 {
-if (_strchr(accept, *s) != NULL)
+if (*accept != NULL)
 {
-return (s);
+return (i);
 }
-s++;
 }
 return (NULL);
 }
