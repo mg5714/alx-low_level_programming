@@ -1,8 +1,8 @@
 #include "main.h"
 #include <string.h>
 /**
+ * is_palin - a recursive function that checks if a string is a palindrome
  * is_palindrome - a function that check a string is a palindrome
- * is_palin - a  function that check a string is a palindrome and length
  *@s: string
 *@x: str
 *@e: num
