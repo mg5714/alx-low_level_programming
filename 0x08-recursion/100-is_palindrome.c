@@ -21,8 +21,6 @@ return (1);
 /**
  * is_palindrome - a function that check a string is a palindrome
  *@s: string
-*@x: str
-*@e: num
 * Return: 1 if a string is a palindrome and 0 if not.
 */
 int is_palindrome(char *s)
