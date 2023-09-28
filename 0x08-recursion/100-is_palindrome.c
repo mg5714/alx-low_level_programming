@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * is_palindrome - a function that check a string is a palindrome
- * is_palin - a fun to len
+ * is_palin - a  function that check a string is a palindrome and length
  *@s: string
 *@x: str
 *@e: num
