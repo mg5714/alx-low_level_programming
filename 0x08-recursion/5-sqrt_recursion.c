@@ -3,8 +3,11 @@
  * _sqrt_recursion - a function that returns the natural square
  * root of a number
  *@n: num
+ *@start: num
+ *@end: num
 * Return: -1 If n does not have a natural square root
 */
+int _sqrt_helper(int n, int start, int end);
 int _sqrt_recursion(int n)
 {
 if (n < '\0')
