@@ -9,7 +9,7 @@ void _print_rev_recursion(char *s)
 int len;
 if (len > 0)
 {
-puchar ('\n');
+putchar ('\n');
 _print_rev_recursion(s - 1);
 putchar (s);
 }
