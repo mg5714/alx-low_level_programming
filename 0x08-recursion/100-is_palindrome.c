@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * is_palindrome - a function that check a string is a palindrome
+ * strlen - a fun to len
  *@s: string
 *@x: str
 *@e: num
