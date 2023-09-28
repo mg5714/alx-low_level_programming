@@ -37,5 +37,5 @@ return (mid);
 else if (mid * mid < n)
 return (_sqrt_helper(n, start, mid + 1));
 else
-return (_sqrt_helper(n, mid - 1, end));
+return (_sqrt_helper(n, end, mid - 1));
 }
