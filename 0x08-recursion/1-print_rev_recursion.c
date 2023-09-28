@@ -11,6 +11,6 @@ if (len > 0)
 {
 putchar ('\n');
 _print_rev_recursion(s - 1);
-putchar (s);
+putchar (*s);
 }
 }
