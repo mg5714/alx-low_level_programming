@@ -19,7 +19,7 @@ if (n == 0 || n == 1)
 return (n);
 }
 else
-return (_sqrt_helper(n, 1, n));
+return (_sqrt_helper(n, 1));
 }
 /**
  * _sqrt_helper - a function that returns the natural square
