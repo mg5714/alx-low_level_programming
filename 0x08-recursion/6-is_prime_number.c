@@ -23,7 +23,7 @@ if (n <= 1 || n % x == 0)
 {
 return (0);
 }
-else if (n >= 2 && x >= n)
+else if (n > 1 && x >= n)
 {
 return (1);
 }
