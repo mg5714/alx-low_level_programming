@@ -29,19 +29,18 @@ return (_sqrt_helper(n, 1, n));
  *@end: num
 * Return: -1 If n does not have a natural square root
 */
-int _sqrt_helper(int n, int start, int end)
+int _sqrt_helper(int n, int mid)
 {
-int mid = (start + end) / 2;
 if (mid * mid == n)
 {
 return (mid);
 }
 else if (mid * mid < n)
 {
-return (_sqrt_helper(n, start, mid + 1));
+return (_sqrt_helper(n, mid + 1));
 }
 else
 {
-return (_sqrt_helper(n, end, mid - 1));
+return (_sqrt_helper(n, mid - 1));
 }
 }
