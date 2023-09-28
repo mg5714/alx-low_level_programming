@@ -2,18 +2,24 @@
 /**
  * is_palindrome - a function that check a string is a palindrome
  *@s: string
-*@x: num
+*@x: str
+*@e: num
 * Return: 1 if a string is a palindrome and 0 if not.
 */
+int isPalRec(char s[], int x, int e)
+{
+if (x == e)
+return (1);
+if (s[x] != s[e])
+return (0);
+if (x < e + 1)
+return (isPalRec(s, x + 1, e - 1));
+return (1);
+}
 int is_palindrome(char *s)
 {
-int len = 0;
-while (s[len] != '\0')
-len++;
-if (len == 0)
+int n = strlen(s);
+if (n == 0)
 return (1);
-if (s[0] != s[len - 1])
-return (0);
-s[len - 1] = '\0';
-return (is_palindrome(s + 1));
+return (isPalRec(s, 0, n - 1));
 }
