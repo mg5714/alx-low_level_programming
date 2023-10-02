@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  * main - a program that adds positive numbers.
  * @argc:  arguments cuonter
@@ -8,13 +9,15 @@
  */
 int main(int argc, char *argv[])
 {
+int i, num, sum;
 if (argc == 1)
 {
 printf("0\n");
 return (0);
 }
-int sum = 0;
-int i, num;
+else
+{
+sum = 0;
 for (i = 1; i < argc; i++)
 {
 num = atoi(argv[i]);
@@ -29,5 +32,6 @@ sum += num;
 }
 }
 printf("%d\n", sum);
+}
 return (0);
 }
