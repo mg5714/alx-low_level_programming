@@ -9,14 +9,14 @@
  */
 int main(int argc, char *argv[])
 {
-int num1, num2;
-if (argc != 3)
+  int num1, num2;
+if (argc == 1 || argc == 2)
 {
 printf("Error\n");
 return (1);
 }
-int num1 = atoi(argv[1]);
-int num2 = atoi(argv[2]);
-printf("%d\n", num1 * num2);
+for (num1 = 1; num1 < 3; num1++)
+num2 *= atoi(argv[num1]);
+printf("%d\n", num2);
 return (0);
 }
