@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 int i, sum;
-char num;
+int num;
 if (argc == 1)
 {
 printf("0\n");
