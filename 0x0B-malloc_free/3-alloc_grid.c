@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-* str_concat -  a function that returns a pointer to a 2 dimensional array of integers.
+* alloc_grid -  a function that returns a pointer to a 2 dimensional
+*  array of integers.
 *@width: int
 *@height: int
 * Return: pointer to 2 dim, NULL on failure.
