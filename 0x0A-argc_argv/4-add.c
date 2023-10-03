@@ -24,7 +24,7 @@ for (i = 1; i < argc; i++)
 num = atoi(argv[i]);
 for (j = 0; j < len; j++)
 {
-if (isdigit(*(num + j)) == 0)
+if (isdigit(num == 0)
 {
 printf("Error\n");
 return (1);
