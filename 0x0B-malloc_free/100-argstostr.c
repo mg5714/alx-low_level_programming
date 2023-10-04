@@ -21,7 +21,7 @@ for (i = 0; i < ac; i++)
 {
 total_len += strlen(av[i]);
 }
-total_len += ac - 1;
+total_len += ac + 1;
 result = (char *)malloc(sizeof(char) * (total_len + 1));
 if (result == NULL)
 {
