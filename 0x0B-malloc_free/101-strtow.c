@@ -8,11 +8,11 @@
  */
 int _strlen(char *s)
 {
- int i = 0;
+int i = 0;
 
- while (s[i] != '\0')
-  i++;
- return (i);
+while (s[i] != '\0')
+i++;
+return (i);
 }
 
 /**
@@ -22,18 +22,18 @@ int _strlen(char *s)
  */
 int count_words(char *str)
 {
- int i, count = 0, len = _strlen(str);
+int i, count = 0, len = _strlen(str);
 
- for (i = 0; i < len; i++)
- {
-  if (str[i] != ' ')
-  {
-   count++;
-   while (str[i] != ' ' && i < len)
-    i++;
-  }
- }
- return (count);
+for (i = 0; i < len; i++)
+{
+if (str[i] != ' ')
+{
+count++;
+while (str[i] != ' ' && i < len)
+i++;
+}
+}
+return (count);
 }
 
 /**
@@ -43,42 +43,42 @@ int count_words(char *str)
  */
 char **strtow(char *str)
 {
- int i, j, k, len, word_len, word_count = 0;
- char **result;
+int i, j, k, len, word_len, word_count = 0;
+char **result;
 
- if (str == NULL || str[0] == '\0')
-  return (NULL);
+if (str == NULL || str[0] == '\0')
+return (NULL);
 
- word_count = count_words(str);
- if (word_count == 0)
-  return (NULL);
+word_count = count_words(str);
+if (word_count == 0)
+return (NULL);
 
- result = malloc(sizeof(char *) * (word_count + 1));
- if (result == NULL)
-  return (NULL);
+result = malloc(sizeof(char *) * (word_count + 1));
+if (result == NULL)
+return (NULL);
 
- len = _strlen(str);
- for (i = 0, j = 0; i < len; i++)
- {
-  if (str[i] != ' ')
-  {
-   word_len = 0;
-   while (str[i + word_len] != ' ' && i + word_len < len)
-    word_len++;
-   result[j] = malloc(sizeof(char) * (word_len + 1));
-   if (result[j] == NULL)
-   {
-    for (j--; j >= 0; j--)
-     free(result[j]);
-    free(result);
-    return (NULL);
-   }
-   for (k = 0; k < word_len; k++)
-    result[j][k] = str[i++];
-   result[j][k] = '\0';
-   j++;
-  }
- }
- result[j] = NULL;
- return (result);
+len = _strlen(str);
+for (i = 0, j = 0; i < len; i++)
+{
+if (str[i] != ' ')
+{
+word_len = 0;
+while (str[i + word_len] != ' ' && i + word_len < len)
+word_len++;
+result[j] = malloc(sizeof(char) * (word_len + 1));
+if (result[j] == NULL)
+{
+for (j--; j >= 0; j--)
+free(result[j]);
+free(result);
+return (NULL);
+}
+for (k = 0; k < word_len; k++)
+result[j][k] = str[i++];
+result[j][k] = '\0';
+j++;
+}
+}
+result[j] = NULL;
+return (result);
 }
