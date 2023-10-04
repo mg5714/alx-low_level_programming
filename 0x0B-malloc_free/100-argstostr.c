@@ -31,7 +31,7 @@ for (i = 0; i < ac; i++)
 {
 strcpy(result + index, av[i]);
 index += strlen(av[i]);
-result[index] = '\n';
+result[index] =  ' ';
 index++;
 }
 result[total_len] = '\0';
