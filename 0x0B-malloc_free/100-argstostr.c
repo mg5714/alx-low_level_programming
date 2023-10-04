@@ -34,6 +34,6 @@ index += strlen(av[i]);
 result[index] = '\n';
 index++;
 }
-result[index] = '\0';
+result[total_len] = '\0';
 return (result);
 }
