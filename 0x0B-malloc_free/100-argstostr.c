@@ -10,14 +10,13 @@
 */
 char *argstostr(int ac, char **av)
 {
-  int total_len, i, index = 0, j;
+  int total_len = 0, i, index = 0, j;
 char *result;
 if (ac == 0 || av == NULL)
 {
 return (NULL);
 }
-total_len = 0;
-for (i = 0; i < ac; i++)
+for (i = 0; i < ac; i++, total_len++)
 {
 total_len += strlen(av[i]);
 }
@@ -36,6 +35,6 @@ result[index] = av[i][j];
 result[index] = '\n';
 index++;
 }
-result[total_len] = '\0';
+result[index] = '\0';
 return (result);
 }
