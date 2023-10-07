@@ -19,7 +19,7 @@ return (NULL);
 else
 {
 for (i = 0; i < (nmemb * size); i++)
-ptr[i] = '\0';
+ptr[i] = 0;
 return (ptr);
 }   
 }
