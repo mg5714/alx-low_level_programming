@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _calloc - allocate memory by use malloc
  * @nmemb: num of blocks
