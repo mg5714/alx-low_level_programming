@@ -1,6 +1,6 @@
-
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * string_nconcat - Concatenate two strings using n amount of s2
  * @s1: First string
@@ -11,17 +11,25 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+unsigned int len1 = 0, len2 = 0, i;
+char *result;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-unsigned int s1_length = strlen(s1);
-unsigned int s2_length = strlen(s2);
-char *concatenated_string = (char *)malloc((s1_length + n + 1) * sizeof(char));
-if (concatenated_string == NULL)
+while (s1[len1] != '\0')
+len1++;
+while (s2[len2] != '\0')
+len2++;
+if (n >= len2)
+n = len2;
+result = malloc((len1 + n + 1) * sizeof(char));
+if (result == NULL)
 return (NULL);
-strcpy(concatenated_string, s1);
-strncat(concatenated_string, s2, n);
-concatenated_string[s1_length + n] = '\0';
-return (concatenated_string);
+for (i = 0; i < len1; i++)
+result[i] = s1[i];
+for (i = 0; i < n; i++)
+result[len1 + i] = s2[i];
+result[len1 + n] = '\0';
+return (result);
 }
