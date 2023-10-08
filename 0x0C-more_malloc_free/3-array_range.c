@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * string_nconcat - Concatenate two strings using n amount of s2
- * @min: First string
- * @max: String
+ * array_range - function that creates an array of integers.
+ * @min: int
+ * @max: int
  *
  * Return: the pointer , if it fails return NULL
  */
