@@ -27,6 +27,7 @@ for (i = 0; s1[i] != '\0'; i++)
 result[i] = s1[i];
 for (j = 0; j < n; j++)
 result[i] = s2[j];
+i++;
 result[i] = '\0';
 return (result);
 }
