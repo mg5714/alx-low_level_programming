@@ -1,26 +1,30 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _calloc - allocate memory by use malloc
- * @nmemb: num of blocks
- * @size: size of each block
+ * string_nconcat - Concatenate two strings using n amount of s2
+ * @s1: First string
+ * @s2: String 
+ * @n: Amount int
+ *
  * Return: the pointer , if it fails return NULL
  */
-void *_calloc(unsigned int nmemb, unsigned int size)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *ptr;
-unsigned int i;
-if (nmemb == 0 || size == 0)
+unsigned int len1 = 0, len2 = 0, i;
+char *result;
+while (s1[len1] != '\0')
+len1++;
+while (s2[len2] != '\0')
+len2++;
+if (n >= len2)
+n = len2;
+result = malloc((len1 + n + 1) * sizeof(char));
+if (result == NULL)
 return (NULL);
-ptr = malloc(nmemb * size);
-if (ptr == NULL)
-{
-return (NULL);
-}
-else
-{
-for (i = 0; i < (nmemb * size); i++)
-ptr[i] = 0;
-return (ptr);
-}
+for (i = 0; i < len1; i++)
+result[i] = s1[i];
+for (i = 0; i < n; i++)
+result[len1 + i] = s2[i];
+result[len1 + n] = '\0';
+return (result);
 }
