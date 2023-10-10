@@ -1,5 +1,39 @@
 #include "dog.h"
 #include <stdio.h>
+
+
+/**
+  * _strlen - Returns length of a string
+  * @s: String
+  * Return: len
+  */
+int _strlen(char *s)
+{
+	int len = 0;
+
+	for (; *s != '\0'; s++)
+	{
+		len++;
+	}
+
+	return (len);
+}
+
+/**
+ * _strcpy - Copy a string from src to dest
+ * @dest: destination
+ * @src: sources
+ *
+ * Return: dest
+ */
+char *_strcpy(char *dest, char *src)
+{
+int i;
+for (i = 0; src[i] != '\0'; i++)
+dest[i] = src[i];
+dest[i] = '\0';
+return (dest);
+}
 /**
  * new_dog - function that create new dog
  * @name: name
