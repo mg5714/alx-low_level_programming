@@ -3,7 +3,7 @@
 /**
  * main - prints the name of the sursses file
  * 
- * Return: always 0
+ * Return: Always 0
  */
 
 int main(void)
