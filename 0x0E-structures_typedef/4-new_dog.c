@@ -10,6 +10,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+char *nameCopy, *ownerCopy;
 if (name == NULL || owner == NULL)
 {
 return (NULL);
@@ -19,13 +20,13 @@ if (newDog == NULL)
 {
 return (NULL);
 }
-char *nameCopy = strdup(name);
+nameCopy = strdup(name);
 if (nameCopy == NULL)
 {
 free(newDog);
 return (NULL);
 }
-char *ownerCopy = strdup(owner);
+ownerCopy = strdup(owner);
 if (ownerCopy == NULL)
 {
 free(nameCopy);
