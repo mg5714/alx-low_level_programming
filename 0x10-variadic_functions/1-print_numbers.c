@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * sum_them_all - function that returns the sum of all its parameters.
+ * print_numbers - function that prints numbers, followed by a new line
+ * @separator:  separator
  * @n:  int
- * Return: sum
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
