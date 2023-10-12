@@ -10,8 +10,7 @@ void print_all(const char * const format, ...)
 {
 va_list ap;
 int i = 0, j = 0;
-char *str;
-char *c = ", ";
+char *str, *c = ", ";
 va_start(ap, format);
 
 while (format && format[j])
