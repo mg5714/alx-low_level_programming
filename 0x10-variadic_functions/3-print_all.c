@@ -19,7 +19,7 @@ j++;
 
 while (*format && format[i])
 {
-if (n == 0)
+if (n == (i - 1))
 {
 c = "";
 }
