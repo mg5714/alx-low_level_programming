@@ -18,6 +18,7 @@ if (newnode->str == NULL)
 free(newnode);
 return (NULL);
 }
+newnode->len = newnode->str;
 }
 newnode->next = *head;
 *head = newnode;
