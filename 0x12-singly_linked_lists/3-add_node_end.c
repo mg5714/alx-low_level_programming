@@ -13,6 +13,7 @@ list_t *last_node = *head;
 if (new_node == NULL)
 return (NULL);
 new_node->str =strdup(str);
+new_node->len = strlen(str);
 new_node->next = NULL;
 if (*head == NULL)
 {
