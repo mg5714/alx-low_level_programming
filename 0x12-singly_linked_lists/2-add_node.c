@@ -13,14 +13,14 @@ if (head == NULL || newnode == NULL)
 return (NULL);
 if (str)
 {
-newnode->str = strdup(str);
 if (newnode->str == NULL)
 {
 free(newnode);
 return (NULL);
 }
-newnode->len = newnode->str;
 }
+newnode->str = strdup(str);
+newnod->len = len;
 newnode->next = *head;
 *head = newnode;
 return (newnode);
