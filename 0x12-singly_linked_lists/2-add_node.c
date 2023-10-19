@@ -1,6 +1,32 @@
+#include "lists.h"
+
+/**
+ * _strlen - returns the length of a string
+ * @s: string to evaluate
+ *
+ * Return: the length of the string
+ */
+int _strlen(char *s)
+{
+int i;
+for (i = 0; *s != '\0'; s++)
+i++;
+return (i);
+}
+
+/**
+* add_node - a function that adds a new node at the beginning of a list_t list.
+* @head: pointer to head pointer
+* @str: node data
+* Return: the address of the new element, or NULL if it failed
+*/
 list_t *add_node(list_t **head, const char *str){
-struct list_t* new = malloc(sizeof(struct list_t));
-new->str = str;
-new->next = *head;
-(*head) = new ;
+struct list_t *newnode = malloc(sizeof(struct list_t));
+if (newnode == NULL)
+return (NULL);
+newnode->str = strdup(str);
+newnode->len = _strlen(str);
+newnode->next = *head;
+*head = newnode;
+return (newnode);
 }
