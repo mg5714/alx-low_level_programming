@@ -7,8 +7,10 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
+if (head == NULL)
+return (NULL);
 list_t *newnode = malloc(sizeof(list_t));
-if (head == NULL || newnode == NULL)
+if (newnode == NULL)
 return (NULL);
 newnode->str = strdup(str);
 if (newnode->str == NULL)
