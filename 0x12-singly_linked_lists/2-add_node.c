@@ -20,8 +20,9 @@ return (i);
 * @str: node data
 * Return: the address of the new element, or NULL if it failed
 */
-list_t *add_node(list_t **head, const char *str){
-struct list_t *newnode = malloc(sizeof(struct list_t));
+list_t *add_node(list_t **head, const char *str)
+{
+list_t *newnode = malloc(sizeof(list_t));
 if (newnode == NULL)
 return (NULL);
 newnode->str = strdup(str);
