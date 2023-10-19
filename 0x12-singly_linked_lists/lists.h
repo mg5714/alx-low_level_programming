@@ -29,3 +29,18 @@ list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 
 #endif
+
+
+/**
+ * _strlen - returns the length of a string
+ * @s: string to evaluate
+ *
+ * Return: the length of the string
+ */
+int _strlen(char *s)
+{
+int i;
+for (i = 0; *s != '\0'; s++)
+i++;
+return (i);
+}
