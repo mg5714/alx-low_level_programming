@@ -20,7 +20,7 @@ return (NULL);
 }
 }
 newnode->str = strdup(str);
-newnod->len = len;
+
 newnode->next = *head;
 *head = newnode;
 return (newnode);
