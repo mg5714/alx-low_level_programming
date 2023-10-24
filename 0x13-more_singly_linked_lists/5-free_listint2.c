@@ -11,7 +11,7 @@ listint_t *current;
 listint_t *tmp = *head;
 if (*head == NULL)
 return;
-while (tmp != NULL)
+while (tmp)
 {
 current = tmp;
 tmp = tmp->next;
