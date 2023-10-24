@@ -16,7 +16,7 @@ tmp = head;
 while (node && tmp && tmp->next)
 {
 node = node->next;
-tmp = tmp->next->next;
+tmp = (tmp->next)->next;
 if (node == tmp)
 {
 node = tmp;
