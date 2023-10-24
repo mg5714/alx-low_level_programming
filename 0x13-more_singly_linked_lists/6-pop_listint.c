@@ -14,6 +14,6 @@ return (0);
 tmp = (*head)->next;
 data = (*head)->n;
 free(*head);
-*head = (*head)->next;
+*head = tmp;
 return (data);
 }
