@@ -20,9 +20,9 @@ return (1);
 }
 for (i = 0 ;i < index  - 1; i++)
 {
-tmp = tmp->next;
 if (tmp == NULL)
 return (-1);
+tmp = tmp->next;
 }
 tmp->next = node->next;
 free(node);
