@@ -18,7 +18,7 @@ tmp = tmp->next;
 free(tmp);
 return (1);
 }
-for (i = 0 ;i < index  - 1; i++)
+for (i = 0; i < index  - 1; i++)
 {
 if (tmp == NULL)
 return (-1);
