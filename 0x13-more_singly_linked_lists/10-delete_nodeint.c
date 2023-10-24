@@ -18,12 +18,11 @@ if (index == 0)
 free(tmp);
 return (1);
 }
-while (i < index  - 1)
+for (i < index  - 1; i++)
 {
 tmp = tmp->next;
 if (tmp == NULL)
 return (-1);
-i++;
 }
 tmp->next = node->next;
 free(node);
