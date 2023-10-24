@@ -12,7 +12,7 @@ int data;
 if (head == NULL)
 return (0);
 tmp = *head;
-data = tmp->n;
+data = (*head)->n;
 *head = (*head)->next;
 free(tmp);
 return (data);
