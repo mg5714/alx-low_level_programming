@@ -8,11 +8,9 @@
 */
 listint_t *find_listint_loop(listint_t *head)
 {
-listint_t *node, *tmp;
+listint_t *node = head, *tmp = head;
 if (head == NULL)
 return (NULL);
-node = head;
-tmp = head;
 while (node && tmp && tmp->next)
 {
 node = node->next;
