@@ -13,7 +13,7 @@ if (head == NULL)
 return (0);
 tmp = (*head)->next;
 data = (*head)->n;
-free(tmp);
+free(*head);
 *head = (*head)->next;
 return (data);
 }
