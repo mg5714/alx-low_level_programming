@@ -20,9 +20,9 @@ return (1);
 }
 while (i < index  - 1)
 {
+tmp = tmp->next;
 if (tmp == NULL)
 return (-1);
-tmp = tmp->next;
 i++;
 }
 tmp->next = node->next;
