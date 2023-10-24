@@ -24,6 +24,7 @@ if (tmp == NULL)
 return (-1);
 tmp = tmp->next;
 }
+node = tmp->next;
 tmp->next = node->next;
 free(node);
 return (1);
