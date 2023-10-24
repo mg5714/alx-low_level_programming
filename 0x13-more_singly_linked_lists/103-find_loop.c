@@ -18,7 +18,9 @@ while (node && tmp && tmp->next)
 node = node->next;
 tmp = tmp->next->next;
 if (node == tmp)
+{
 node = tmp;
+}
 return (node);
 }
 return (NULL);
