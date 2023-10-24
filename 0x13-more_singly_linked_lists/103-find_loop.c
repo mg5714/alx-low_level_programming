@@ -20,6 +20,9 @@ tmp = tmp->next->next;
 if (node == tmp)
 {
 node = tmp;
+while (node != tmp)
+node = node->next;
+tmp = tmp->next;
 }
 return (node);
 }
