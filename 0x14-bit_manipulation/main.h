@@ -2,7 +2,6 @@
 #define MAIN_H
 
 #include <stdio.h>
-#include <limitts.h>
 
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
