@@ -14,7 +14,7 @@ while (*b != NULL)
 {
 if (*b != '0' && *b != '1')
 return (0);
-res = (res * 2) + (*b++ - '0');
+res = res * 2 + (*b++ - '0');
 }
 return (res);
 }
