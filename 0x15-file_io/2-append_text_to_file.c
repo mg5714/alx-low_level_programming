@@ -12,7 +12,7 @@ int fp, len = 0, wr;
 if (filename == NULL)
 return (-1);
 fp = open(filename, O_WRONLY | O_APPEND);
-if (fp == NULL)
+if (fp == -1)
 return (-1);
 if (text_content != NULL)
 {
