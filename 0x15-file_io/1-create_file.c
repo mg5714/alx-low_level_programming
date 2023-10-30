@@ -26,6 +26,5 @@ wr = write(fp, text_content, len);
 if (wr == -1)
 return (-1);
 }
-fclose(fp);
 return (1);
 }
