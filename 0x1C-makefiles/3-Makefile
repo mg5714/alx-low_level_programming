@@ -15,4 +15,4 @@ oclean:
 
 fclean: clean oclean
         $(RM) $(NAME)
-re: fclean all
+re: oclean all
